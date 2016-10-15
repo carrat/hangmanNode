@@ -1,0 +1,23 @@
+{
+  "name": "hang",
+  "version": "1.0.0",
+  "description": "Overview  In this assignment, you'll revisit the Hangman homework from week two and empower it with JavaScript constructors. Unlike the original front-end app, this Hangman game will run entirely with Node.js.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrat/hangmanNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrat/hangmanNode/issues"
+  },
+  "homepage": "https://github.com/carrat/hangmanNode#readme",
+  "dependencies": {
+    "inquirer": "^1.2.2",
+    "os": "^0.1.1"
+  }
+}
