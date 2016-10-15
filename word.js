@@ -43,7 +43,6 @@ module.exports.Word = function(word, allGuesses, spaces, strikes, victory) {
 	            // update the arrays
 	            this.allGuesses.push(guess);
 	            this.strikes = parseInt(this.strikes) + 1;
-	            console.log("Strikes: " + this.strikes);
 	            //update the board
 	            word.updateBoard(word);
 	        }
