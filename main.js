@@ -50,13 +50,11 @@ function outputInstructions() {
 
 function startGame(word) {
 	// select a word to start the game
-	var correctGuesses = []; //array of correct letters guessed
-	var incorrectGuesses = []; // array of incorrect letters guessed
 	var allGuesses = []; // array of all letters guessed
 	// output the instructions
 	outputInstructions();
 	// Create the Word object
-	word = new wordJS.Word(word, correctGuesses, incorrectGuesses, allGuesses, mysteryWordSpaces, 0, 0);
+	word = new wordJS.Word(word, allGuesses, mysteryWordSpaces, 0, 0);
 	//console.log("Word: " + word.word);
 	// Output the gameboard
 	word.updateBoard(this.word);

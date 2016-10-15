@@ -1,10 +1,8 @@
 //Both letter.js and word.js should be constructor files:
 //word.js should contain all of the methods which will check the letters guessed versus the random word selected.
 
-module.exports.Word = function(word, hits, misses, allGuesses, spaces, strikes, victory) {
+module.exports.Word = function(word, allGuesses, spaces, strikes, victory) {
 	this.word = word;
-	this.hits = hits;
-	this.misses = misses;
 	this.allGuesses = allGuesses;
 	this.spaces = spaces;
 	this.strikes = strikes;
@@ -21,7 +19,6 @@ module.exports.Word = function(word, hits, misses, allGuesses, spaces, strikes, 
 	        	// let them know
 	            console.log("Correct!");
 	            //update the arrays
-	            this.hits.push(guess);
 	            this.allGuesses.push(guess);
 	            //update the board
 	            for (i=0; i < this.word.length; i++) {
@@ -44,10 +41,7 @@ module.exports.Word = function(word, hits, misses, allGuesses, spaces, strikes, 
 	        	// incorrect guess, let them know and reload the form
 	            console.log("Nope! Try Again");
 	            // update the arrays
-	            this.misses.push(guess);
-	            //console.log("Misses: " + this.misses);
 	            this.allGuesses.push(guess);
-	            //console.log("All Guesses: " + this.allGuesses);
 	            this.strikes = parseInt(this.strikes) + 1;
 	            console.log("Strikes: " + this.strikes);
 	            //update the board
