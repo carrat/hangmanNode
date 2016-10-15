@@ -68,18 +68,6 @@ module.exports.Word = function(word, hits, misses, allGuesses, spaces, strikes, 
 		}
     };
 
-    this.gameboard = function(myWord) { 
-		var buildGameboard = '';
-        //output the gameboard with correct letters revealed and unrevealed letters hidden
-        for (i=0; i<this.spaces.length;i++) {
-        	buildGameboard += this.spaces[i] + ' ';
-        }
-        console.log("------------------------------------------------")
-        console.log("Mystery Word:");
-        console.log(buildGameboard);
-        console.log("------------------------------------------------")
-    };
-
     this.updateBoard = function(word) {
 
 		var newBoard = '';
@@ -100,7 +88,7 @@ module.exports.Word = function(word, hits, misses, allGuesses, spaces, strikes, 
 			missBoard = missBoard + this.allGuesses[i] + ' ';
 		}
         console.log("Letters Guessed: " + missBoard);
-        console.log("Strikes: " + this.strikes);
+        console.log("Strikes: " + this.strikes + "/10");
         console.log(" ");
         console.log(" ");
 	}     

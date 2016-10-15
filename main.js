@@ -28,7 +28,6 @@ function ask(word) {
 				if (word.strikes < 10) {
 				ask(word);
 				}
-
 				else {
 					console.log("Game Over");
 				}
@@ -41,10 +40,12 @@ function ask(word) {
 
 // will output the instructions
 function outputInstructions() {
+	console.log(" ");
 	console.log("Welcome to Hangmanimal!");
 	console.log("---------------------------------------");
 	console.log("Each mystery word is an animal. Guess a letter that might appear in the name of the animal.")
 	console.log("10 wrong guesses and the game is over!")
+	console.log(" ");
 }
 
 function startGame(word) {
@@ -56,9 +57,9 @@ function startGame(word) {
 	outputInstructions();
 	// Create the Word object
 	word = new wordJS.Word(word, correctGuesses, incorrectGuesses, allGuesses, mysteryWordSpaces, 0, 0);
-	console.log("Word: " + word.word);
+	//console.log("Word: " + word.word);
 	// Output the gameboard
-	word.gameboard(this.word);
+	word.updateBoard(this.word);
 	// Start the prompt
 	ask(word);
 }
