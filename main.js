@@ -4,9 +4,8 @@
 // Includes
 var game = require("./game.js");
 var wordJS = require("./word.js");
-var letterJS = require("./letter.js");
+//var letterJS = require("./letter.js");
 var inquirer = require('inquirer');
-var os = require("os");
 
 // Variables
 var mysteryWords = ['SIBERIAN TIGER', 'FLYING SQUIRREL', 'EMPEROR PENGUIN', 'CHIMPANZEE', 'AFRICAN ELEPHANT', 'DUCKBILLED PLATYPUS', 'GROUNDHOG', 'PRAIRIE DOG', 'HIPPOPOTAMUS', 'ZEBRA', 'RINGTAILED LEMUR', 'AARDVARK', 'HEDGEHOG', 'SLOTH', 'RHINOCEROS', 'SEA TURTLE', 'LONGHORN', 'GECKO', 'YELLOW JACKET', 'UNICORN', 'PORCUPINE', 'POLAR BEAR', 'KANGAROO', 'GIANT PANDA' ];
